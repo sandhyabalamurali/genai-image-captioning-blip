@@ -7,23 +7,23 @@ To design and deploy a prototype application for image captioning by utilizing t
 Image captioning is the task of generating a textual description for a given image. This is crucial for applications like accessibility tools for visually impaired users, content generation, and image indexing. Traditional systems often rely on predefined labels or are limited in context understanding. By leveraging the BLIP model—a state-of-the-art vision-language pretraining model—this project aims to create an intuitive and efficient application for real-time image captioning, accessible via the Gradio interface.
 
 ### DESIGN STEPS:
-## Model Preparation
+# Model Preparation
 Use a pre-trained BLIP image-captioning model available from Hugging Face Transformers or similar libraries.
 Ensure the model supports inference on diverse image types and contexts.
 
-## Framework
+# Framework
 Use Gradio to create a UI with the following components:
 Input: File upload for images.
 Output: Textbox showing the generated caption.
 
-## Workflow
+# Workflow
 Load the BLIP model and tokenizer.
 Accept an image as input via Gradio's file upload.
 Preprocess the image for the BLIP model.
 Generate a caption using the BLIP model's inference pipeline.
 Display the caption on the Gradio interface.
 
-## Testing and Deployment
+# Testing and Deployment
 Test the application with various image types to ensure the captions are meaningful and diverse.
 Deploy the application on a public URL using Gradio’s hosting features or external platforms like Hugging Face Spaces.
 
